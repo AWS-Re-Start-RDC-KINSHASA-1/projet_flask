@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #333;
+        }
+        .btn-login {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .logo {
+            width: 300px; /* ajustez la largeur selon vos besoins */
+            height: auto; /* cela maintiendra le ratio hauteur/largeur */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.licdn.com/dms/image/C4D12AQHd9Vnyi3G2YQ/article-cover_image-shrink_720_1280/0/1600680341974?e=2147483647&v=beta&t=0D4sc48w11IKLXTJ3GW02rPYi4ckDGUs4YFm1EsJ4bI" alt="AWS re/Start Logo" class="logo">
+        <h1>Bienvenue sur la page d'accueil !</h1>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-login">Se connecter</a>
+    </div>
+</body>
+</html>

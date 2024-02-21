@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion réussie</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #333;
+        }
+        .success-message {
+            font-size: 24px;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/png;base64,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" alt="AWS re/Start Logo" class="logo">
+        <h1>Connexion réussie !</h1>
+        <p class="success-message">Vous vous êtes connecté avec succès !</p>
+    </div>
+</body>
+</html>
